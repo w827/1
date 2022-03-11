@@ -319,10 +319,10 @@ def main():
     print("----------------欢迎使用图书馆预约系统---------------------")
     print('-----使用说明:')
     print('----- 请先编辑account.txt')
-    print('----- 输入格式:账号 密码 教室 座位号 座位号 座位号')
-    print('----- 输入 1.抢当天(立即抢)  2.抢第二天(18:19:55 开始抢)')
-    print('----- 如果当前时间已过 18:20 则立即抢座')
+    print('----- account.txt格式:账号 密码 教室 座位号 座位号 座位号')
+    print('----- 预约方式若时间已过 18:20 则立即抢座')
     print('----- 当日请于30分钟内签到，次日请于8:20前签到')
+    print('----- 输入 1.抢当天(立即)  2.预约(18:19:55开始)')
     appointmentTime = input()
     if not appointmentTime.__eq__("1") and not appointmentTime.__eq__("2"):
         print("输入格式错误,程序结束.")
@@ -338,5 +338,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-# https://aip.baidubce.com/oauth/2.0/token?grant_type=client_credentials&client_id=H6qngavUdbaeHxOlAtSZGPN0&client_secret=tdGtA5Pkt4A3hntrla0orV7Wog1PMDHN&
